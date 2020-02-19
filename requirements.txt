@@ -1,8 +1,7 @@
 autopep8
 tensorflow>=2.1.0
 tensorflow_hub>=0.6.0
-neural-structured-learning 
-# pyspark>=2.4.4
+neural-structured-learning
 ipython
 jupyter
 pandas
