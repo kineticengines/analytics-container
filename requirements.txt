@@ -1,0 +1,25 @@
+autopep8
+tensorflow>=2.1.0
+tensorflow_hub>=0.6.0
+neural-structured-learning 
+# pyspark>=2.4.4
+ipython
+jupyter
+pandas
+scikit-learn
+scikit-image
+datashader
+holoviews
+seaborn
+matplotlib
+pydot
+opencv-python
+opencv-contrib-python
+pydicom
+larq
+librosa
+python_speech_features
+tqdm
+transformers>=2.4.1
+requests>=2.21.0
+keras-tuner>=1.0.0
