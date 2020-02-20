@@ -1,5 +1,9 @@
 # Kinetic Engines analytics container
 
+<div align="center">
+  <img src="logo.png"><br><br>
+</div>
+
 Analytics container is a simple docker image that comes pre-installed with majority of data science and 
 ML/Dl packages. 
 
@@ -37,3 +41,7 @@ The image is updated frequently and can be downloaded from Google cloud registry
 ```sh
 docker pull kinetic-engines-analytics:latest 
 ```
+
+## License
+
+[Apache License 2.0](LICENSE)

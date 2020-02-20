@@ -21,3 +21,4 @@ sqls
 *.ipynb
 
 .ipynb_checkpoints
+*.png
