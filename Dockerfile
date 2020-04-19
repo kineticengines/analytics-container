@@ -10,7 +10,7 @@ RUN apt-get update -y && apt-get -y install software-properties-common --fix-mis
     apt install -y vim && apt-get install -y ca-certificates && \
     apt-get install -y tzdata --fix-missing && ln -fs /usr/share/zoneinfo/Africa/Nairobi /etc/localtime && \
     dpkg-reconfigure --frontend noninteractive tzdata && \ 
-    apt install -y htop tmux git curl httpie libasound2 --fix-missing
+    apt install -y htop tmux git curl httpie libasound2 libglu1-mesa --fix-missing
 
 
 # Install python
@@ -41,8 +41,11 @@ COPY . /app
 
 RUN pip3 install -r requirements.txt
 
-# # dowload nltk corpus. Downloading all for future work
-# RUN python3 -c "import nltk; nltk.download('all')"
+# install pyttorch
+RUN pip install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
+# dowload nltk corpus. Downloading all for future work
+RUN python3 -c "import nltk; nltk.download('all')"
 
 
 
