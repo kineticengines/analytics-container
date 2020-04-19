@@ -1,8 +1,8 @@
-# Kinetic Engines analytics container
-
 <div align="center">
-  <img src="logo.png"><br><br>
+  <img src="https://kineticengines.co.ke/assets/images/logo-dark.png">
+  <h1>Kinetic Engines Analytics Container</h1>
 </div>
+
 
 Analytics container is a simple docker image that comes pre-installed with majority of data science and 
 ML/Dl packages. 
