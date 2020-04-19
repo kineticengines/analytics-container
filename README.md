@@ -39,7 +39,7 @@ While not an exhaustive list of all packages that may be required, it does conta
 The image is updated frequently and can be downloaded from Google cloud registry by running
 
 ```sh
-docker pull kinetic-engines-analytics:latest 
+docker pull gcr.io/kinetic-engines-247005/kinetic-engines-analytics:latest 
 ```
 
 ## License
