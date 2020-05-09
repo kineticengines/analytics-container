@@ -1,6 +1,6 @@
 tensorflow>=2.1.0
-tensorflow_hub>=0.6.0
-tensorflow-addons>=0.8.2
+tensorflow_hub
+# tensorflow-addons -> unitl py 3.8 is supported
 neural-structured-learning
 ipython
 jupyter
