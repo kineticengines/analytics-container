@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM tensorflow/tensorflow:latest-gpu 
 LABEL DavidDexter "dmwangi@kineticengines.co.ke"
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -33,4 +33,4 @@ COPY . /app
 RUN pip3 install -r requirements.txt
 
 # install pyttorch
-RUN pip3 install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+# RUN pip3 install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
