@@ -33,4 +33,4 @@ COPY . /app
 RUN pip3 install -r requirements.txt
 
 # install pyttorch
-# RUN pip3 install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip3 install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
