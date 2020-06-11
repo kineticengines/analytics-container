@@ -1,5 +1,5 @@
 run:
-	docker run --gpus all -it --rm -v $PWD:/app --network=host gcr.io/kinetic-engines-247005/kinetic-engines-analytics
+	docker run --gpus all -it --rm -v $PWD:/app --network=host -u $(id -u):$(id -g) gcr.io/kinetic-engines-247005/kinetic-engines-analytics
 
 push:
 	gcloud builds submit --timeout=1800
