@@ -12,27 +12,32 @@ their system. All the is needed to **Docker**.
 
 ## Included packages
 
-- Tensorflow  2.1.0
-- Tensorflow_hub
-- Neural-structured-learning
-- Ipython
-- Jupyter
-- Pandas
-- Scikit-learn
-- Scikit-image
-- Datashader
-- Holoviews
-- Seaborn
-- Matplotlib
-- Pydot
-- Opencv-python
-- Pydicom
-- Larq
-- Librosa
-- Python_speech_features
-- TQDM
-- Transformers
-- Keras-tuner
+- tensorflow
+- neural-structured-learning
+- jupyter
+- pandas
+- scikit-learn
+- scikit-image
+- datashader
+- holoviews
+- seaborn
+- matplotlib
+- pydot
+- opencv-python
+- pydicom
+- larq
+- librosa
+- python_speech_features
+- tqdm
+- transformers
+- nlp
+- keras-tuner
+- pytorch
+- stable-baselines
+- gym
+- tf-agent
+- tensorforce
+
 
 While not an exhaustive list of all packages that may be required, it does contain engough to get started. 
 
