@@ -23,3 +23,7 @@ requests>=2.21.0
 keras-tuner>=1.0.0
 gym
 nlp
+tf-agents
+tensorforce
+tensorflow-probability
+stable-baselines
