@@ -27,3 +27,5 @@ tf-agents
 tensorforce
 tensorflow-probability
 stable-baselines
+tf-models-nightly
+
