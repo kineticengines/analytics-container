@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-gpu 
+FROM tensorflow/tensorflow:nightly-gpu
 LABEL DavidDexter "dmwangi@kineticengines.co.ke"
 ENV DEBIAN_FRONTEND noninteractive
 
