@@ -13,10 +13,8 @@ matplotlib
 pydot
 opencv-python
 opencv-contrib-python
-pydicom
 larq
 librosa
-python_speech_features
 tqdm
 transformers>=2.4.1
 requests>=2.21.0

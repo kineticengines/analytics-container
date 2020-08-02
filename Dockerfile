@@ -28,5 +28,6 @@ COPY . /app
 
 RUN pip3 install -r requirements.txt
 
-# install pyttorch
-RUN pip3 install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+# Fix https://github.com/pytorch/pytorch/issues/22676 by reinstall tensorboard
+RUN pip3 uninstall tb-nightly tensorboardX tensorboard
+RUN pip3 install tensorboard
