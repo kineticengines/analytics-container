@@ -26,4 +26,4 @@ tensorforce
 tensorflow-probability
 stable-baselines
 tf-models-nightly
-
+apache-beam

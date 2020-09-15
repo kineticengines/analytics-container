@@ -12,6 +12,10 @@ RUN apt-get update -q -y && apt-get -q -y install vim software-properties-common
     python3-pip python3-setuptools python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev \
     shared-mime-info python3-tk graphviz --fix-missing
 
+RUN apt-get update -q -y && apt-get -q -y install openjdk-11-jdk && \
+    echo "JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" | tee -a /etc/environment && \
+    source /etc/environment 
+
 # make python default by aliasing 
 RUN echo alias python=python3 >> ~/.bashrc
 
