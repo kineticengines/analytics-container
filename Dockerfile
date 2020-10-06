@@ -21,14 +21,22 @@ RUN echo alias python=python3 >> ~/.bashrc
 
 # Define python path
 ENV PYTHONPATH  /usr/bin/python 
-
 # # Append pythonpath to system paths
 ENV PATH=$PATH:$PYTHONPATH
+
+
+ENV SPARK_HOME=/opt/spark
+# # Append spark pato to system paths
+ENV PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 
 # update pip
 RUN python3 -m pip install -q --upgrade pip setuptools && pip3 install --upgrade pip
 
 COPY . /app
+
+RUN curl https://downloads.apache.org/spark/spark-3.0.1/spark-3.0.1-bin-hadoop3.2.tgz > spark-3.0.1-bin-hadoop3.2.tgz && \
+    tar -xzf spark-3.0.1-bin-hadoop3.2.tgz && mv spark-3.0.1-bin-hadoop3.2 spark && mv spark /opt/
+
 
 RUN pip3 install -q -r requirements.txt --use-feature=2020-resolver
 
