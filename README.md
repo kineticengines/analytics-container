@@ -47,6 +47,13 @@ The image is updated frequently and can be downloaded from Google cloud registry
 docker pull gcr.io/kinetic-engines-247005/kinetic-engines-analytics:latest 
 ```
 
+## Running
+
+
+```sh
+docker run --gpus all -it --rm -v $PWD:/app --network=host -u $(id -u):$(id -g) gcr.io/kinetic-engines-247005/kinetic-engines-analytics
+```
+
 ## License
 
 [Apache License 2.0](LICENSE)
