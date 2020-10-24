@@ -7,13 +7,14 @@ steps:
         "gcr.io/kinetic-engines-247005/kinetic-engines-analytics",
         ".",
       ]
-    timeout: 1800s
 
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/kinetic-engines-247005/kinetic-engines-analytics"]
 
 options:
   machineType: "N1_HIGHCPU_8"
+
+timeout: 1800s
 
 images:
   - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:latest"
