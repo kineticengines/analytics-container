@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:nightly-gpu
+FROM tensorflow/tensorflow:2.3.1-gpu
 LABEL DavidDexter "dmwangi@kineticengines.co.ke"
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -38,4 +38,4 @@ COPY . /app
 #     tar -xzf spark-3.0.1-bin-hadoop3.2.tgz && mv spark-3.0.1-bin-hadoop3.2 spark && mv spark /opt/
 
 
-RUN pip3 install -q -r requirements.txt --use-feature=2020-resolver
+RUN pip3 install --upgrade -r requirements.txt --use-feature=2020-resolver

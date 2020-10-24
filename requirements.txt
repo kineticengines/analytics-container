@@ -1,25 +1,26 @@
-tensorflow_hub
-# tensorflow-addons -> unitl py 3.8 is supported
-# neural-structured-learning
+##core 
+
+numpy>=1.19.2
 ipython
 jupyter
 pandas
 scikit-learn
 scikit-image
-#datashader
-#holoviews
 seaborn
 matplotlib
 pydot
 opencv-python
 opencv-contrib-python
-# larq
 librosa
 tqdm
 transformers>=v3.4.0
 tokenizers
 requests>=2.21.0
-# gym
+
+## extras
+
+tensorflow_hub
+gym
 nlp
 tf-agents
 tensorforce
@@ -27,5 +28,13 @@ tensorflow-probability
 stable-baselines
 tf-models-nightly
 apache-beam
+
+## miscs
+
+# tensorflow-addons -> unitl py 3.8 is supported
+# neural-structured-learning
+#datashader
+#holoviews
+# larq
 # pyspark
 # graphframes
