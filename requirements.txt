@@ -27,5 +27,5 @@ tensorflow-probability
 stable-baselines
 tf-models-nightly
 apache-beam
-pyspark
-graphframes
+# pyspark
+# graphframes
