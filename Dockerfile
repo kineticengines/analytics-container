@@ -40,6 +40,4 @@ RUN curl https://downloads.apache.org/spark/spark-3.0.1/spark-3.0.1-bin-hadoop3.
 
 RUN pip3 install -q -r requirements.txt --use-feature=2020-resolver
 
-# Fix https://github.com/pytorch/pytorch/issues/22676 by reinstall tensorboard
-RUN pip3 uninstall -q -y tb-nightly tensorboardX tensorboard
 RUN pip3 install -q  tensorboard
