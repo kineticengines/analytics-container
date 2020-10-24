@@ -16,7 +16,8 @@ opencv-contrib-python
 # larq
 librosa
 tqdm
-transformers>=2.4.1
+transformers>=v3.4.0
+tokenizers
 requests>=2.21.0
 # gym
 nlp
@@ -28,4 +29,3 @@ tf-models-nightly
 apache-beam
 pyspark
 graphframes
-tokenizers>=0.9.2
