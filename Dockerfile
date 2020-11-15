@@ -5,6 +5,10 @@ ENV DEBIAN_FRONTEND noninteractive
 # default working directory
 WORKDIR /app 
 
+RUN useradd -u 1000 kinetic
+
+USER kinetic
+
 # install system util packages
 RUN apt-get update -q -y && apt-get -q -y install vim software-properties-common apt-utils ca-certificates tzdata --fix-missing && \    
     ln -fs /usr/share/zoneinfo/Africa/Nairobi /etc/localtime && dpkg-reconfigure --frontend noninteractive tzdata && \ 
