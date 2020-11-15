@@ -14,4 +14,4 @@ steps:
 timeout: 1800s
 
 images:
-  - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:latest"
+  - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:20.11.15"
