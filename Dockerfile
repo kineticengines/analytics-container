@@ -4,8 +4,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y apt  sudo 
 
-RUN groupadd --gid 3434 kineticengines \
-    && useradd --uid 3434 --gid kineticengines --shell /bin/bash --create-home kineticengines \
+RUN groupadd --gid 1000 kineticengines \
+    && useradd --uid 1000 --gid kineticengines --shell /bin/bash --create-home kineticengines \
     && echo 'kineticengines ALL=NOPASSWD: ALL' >> /etc/sudoers.d/50-kineticengines \
     && echo 'Defaults env_keep += "DEBIAN_FRONTEND"' >> /etc/sudoers.d/env_keep
 
