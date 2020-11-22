@@ -32,6 +32,8 @@ apache-beam
 
 ## miscs
 
+t5
+
 # tensorflow-addons -> unitl py 3.8 is supported
 # neural-structured-learning
 #datashader

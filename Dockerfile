@@ -48,3 +48,7 @@ COPY . /app
 
 
 RUN pip3 install --upgrade -r requirements.txt --use-feature=2020-resolver --user
+
+# Fix https://github.com/pytorch/pytorch/issues/22676 by reinstall tensorboard
+RUN pip3 uninstall tb-nightly tensorboardX tensorboard  --user
+RUN pip3 install tensorboard --user

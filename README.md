@@ -14,13 +14,13 @@ their system. All the is needed to **Docker**.
 The image is updated frequently and can be downloaded from Google cloud registry by running
 
 ```sh
-docker pull gcr.io/kinetic-engines-247005/kinetic-engines-analytics:latest
+docker pull gcr.io/kinetic-engines-247005/kinetic-engines-analytics:<tag>
 ```
 
 ## Running locally
 
 ```sh
-docker run --gpus all -it --rm -v $PWD:/app --network=host -u $(id -u):$(id -g) gcr.io/kinetic-engines-247005/kinetic-engines-analytics
+docker run --gpus all -it --rm -v $PWD:/app --network=host -u $(id -u):$(id -g) gcr.io/kinetic-engines-247005/kinetic-engines-analytics:<tag>
 ```
 
 ## License
