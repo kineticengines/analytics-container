@@ -4,14 +4,14 @@ steps:
       [
         "build",
         "-t",
-        "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:20.11.22",
+        "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:20.12.25",
         ".",
       ]
 
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:20.11.22"]
+    args: ["push", "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:20.12.25"]
 
 timeout: 1800s
 
 images:
-  - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:20.11.22"
+  - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:20.12.25"

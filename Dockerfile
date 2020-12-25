@@ -1,4 +1,4 @@
-FROM  tensorflow/tensorflow:2.4.0rc0-gpu
+FROM tensorflow/tensorflow:2.4.0-gpu
 LABEL DavidDexter "dmwangi@kineticengines.co.ke"
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -37,8 +37,3 @@ ENV PATH=$PATH:/home/kineticengines/.local/bin
 RUN python3 -m pip install -q --upgrade pip setuptools --user && pip3 install --upgrade pip --user
 
 RUN pip3 install --upgrade -r requirements.txt --use-feature=2020-resolver --user
-
-# RUN pip3 install -e git://github.com/kineticengines/text-to-text-transfer-transformer.git@mirror-main#egg=t5 --use-feature=2020-resolver --user
-
-RUN python3 -m pip install git+https://github.com/kineticengines/text-to-text-transfer-transformer.git@mirror-main --use-feature=2020-resolver --user
-
