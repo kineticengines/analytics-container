@@ -1,3 +1,8 @@
+# 21.01.17
+
+- add POT https://github.com/PythonOT/POT
+- change base to tf-nightly-gpu
+
 # 20.12.25
 
 - remove `t5` package introduced in version `20.11.12`. With this change, the image size should reduce significantly.
