@@ -20,7 +20,6 @@ nlpaug>=1.0.1
 
 ## extras
 
-tensorflow_hub
 gym
 nlp
 tf-agents
@@ -29,13 +28,15 @@ tensorflow-probability
 stable-baselines
 tf-models-nightly
 apache-beam
+tensorflow-hub
+tensorflow-text
+tensorflow-addons
+datashader
+holoviews
 
 ## miscs
 
-# tensorflow-addons -> unitl py 3.8 is supported
 # neural-structured-learning
-#datashader
-#holoviews
 # larq
 # pyspark
 # graphframes
