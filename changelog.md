@@ -1,6 +1,7 @@
 # 21.02.06
 
 - add tensorflow-hub, tensorflow-text, tensorflow-addons, datashader, holoviews
+- change base to `tensorflow/tensorflow:2.4.1-gpu`
 
 # 21.01.17
 
