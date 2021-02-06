@@ -11,7 +11,7 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.02.06"]
 
-timeout: 1800s
+timeout: 3600s
 
 images:
   - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.02.06"
