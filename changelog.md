@@ -1,3 +1,7 @@
+# 21.02.06
+
+- add tensorflow-hub, tensorflow-text, tensorflow-addons, datashader, holoviews
+
 # 21.01.17
 
 - add POT https://github.com/PythonOT/POT
