@@ -1,5 +1,4 @@
-##core 
-
+##core packages
 numpy>=1.19.2
 ipython
 jupyter
@@ -17,22 +16,22 @@ transformers>=v3.4.0
 tokenizers
 requests>=2.21.0
 nlpaug>=1.0.1
-
-## extras
-
-gym
 nlp
-tf-agents
-tensorforce
 tensorflow-probability
-stable-baselines
-tf-models-nightly
+
+## extras packages
 apache-beam
 tensorflow-hub
 tensorflow-text
 tensorflow-addons
 datashader
 holoviews
+
+# reinforcement learning packages
+gym
+tf-agents
+tensorforce
+stable-baselines
 
 ## miscs
 
