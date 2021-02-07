@@ -1,6 +1,7 @@
 # 21.02.07
 
 - remove `tf-models-nightly`. This will significantly reduce the image size
+- default to python3.8
 
 # 21.02.06
 
