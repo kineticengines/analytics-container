@@ -1,3 +1,7 @@
+# 21.02.07.2
+
+- correctly install python3.8 dependencies
+
 # 21.02.07
 
 - remove `tf-models-nightly`. This will significantly reduce the image size
