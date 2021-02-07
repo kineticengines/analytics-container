@@ -38,4 +38,6 @@ ENV PATH=$PATH:/home/kineticengines/.local/bin
 # update pip
 RUN python3 -m pip install -q --upgrade pip setuptools --user && pip3 install --upgrade pip --user
 
-RUN pip3 install --upgrade -r requirements.txt && pip3 install -U https://github.com/PythonOT/POT/archive/master.zip 
+RUN pip3 install --upgrade -r requirements.txt 
+
+RUN pip3 install -U https://github.com/PythonOT/POT/archive/master.zip 
