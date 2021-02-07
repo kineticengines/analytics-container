@@ -1,5 +1,6 @@
 ##core packages
 numpy>=1.19.2
+cython
 ipython
 jupyter
 pandas
