@@ -1,3 +1,7 @@
+# 21.02.07
+
+- remove `tf-models-nightly`. This will significantly reduce the image size
+
 # 21.02.06
 
 - add tensorflow-hub, tensorflow-text, tensorflow-addons, datashader, holoviews
