@@ -5,10 +5,10 @@ steps:
   - --cache=true
   - --cache-ttl=6h
 
-timeout: 3600s
+timeout: 4500s
 
 options:
  logStreamingOption: STREAM_ON
 
-images:
-  - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.02.06"
+# images:
+#   - "gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.02.06"
