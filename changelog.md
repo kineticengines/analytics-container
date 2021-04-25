@@ -1,3 +1,7 @@
+# 21.04.25
+
+- add sci-spacy and spacy
+
 # 21.02.07.2
 
 - correctly install python3.8 dependencies

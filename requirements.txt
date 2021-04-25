@@ -18,6 +18,9 @@ requests>=2.21.0
 nlpaug>=1.0.1
 nlp
 tensorflow-probability
+spacy
+scispacy
+
 
 ## extras packages
 apache-beam
