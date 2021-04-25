@@ -38,4 +38,4 @@ ENV PATH=$PATH:/home/kineticengines/.local/bin
 # install deps
 RUN python3.8 -m pip install --upgrade -r requirements.txt  --user
 
-RUN python3.8 -m pip install -U https://github.com/PythonOT/POT/archive/master.zip -- user
+

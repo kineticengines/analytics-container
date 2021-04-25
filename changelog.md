@@ -1,6 +1,7 @@
 # 21.04.25
 
 - add sci-spacy and spacy
+- remove `RUN python3.8 -m pip install -U https://github.com/PythonOT/POT/archive/master.zip -- user`
 
 # 21.02.07.2
 
