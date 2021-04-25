@@ -35,7 +35,7 @@ ENV PATH=$PATH:$PYTHONPATH
 ENV PATH=$PATH:/home/kineticengines/.local/bin
 
 # update pip and system utilities
-RUN pip3.8 install -q --upgrade six pip setuptools cffi wheel cython tk --user
+RUN pip3.8 install -q --upgrade six pip setuptools cffi wheel cython tk keyrings.alt --user
 
 # install deps
 RUN pip3.8 install --upgrade -r requirements.txt 
