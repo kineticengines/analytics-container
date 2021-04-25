@@ -1,4 +1,5 @@
 ##core packages
+cython
 numpy>=1.19.2
 ipython
 jupyter
