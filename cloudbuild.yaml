@@ -1,11 +1,9 @@
 steps:
-- name: 'gcr.io/kaniko-project/executor:latest'
-  args:
-  - --destination=gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.04.25
-  - --cache=true
-  - --cache-ttl=6h
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.04.26', '.' ]
 
-timeout: 4500s
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.04.26']
 
-options:
- logStreamingOption: STREAM_ON
+images:
+- 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.04.26'
