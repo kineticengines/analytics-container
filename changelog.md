@@ -1,3 +1,13 @@
+# 21.11.28
+
+- downgrade to tensorflow `2.6.1-gpu-jupyter` so that we can support `rasa` which needs the version
+  of tensorflow to be `<2.7.0`. Details found here https://github.com/RasaHQ/rasa/blob/main/poetry.lock#L2836
+
+# 21.11.18
+
+- upgrade to tensorflow `2.7.0-gpu`
+- remove hack to install python 3.8
+
 # 21.04.26
 
 - restore `docker builder` from `kaniko`
