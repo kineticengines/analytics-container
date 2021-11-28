@@ -21,22 +21,27 @@ nlp
 tensorflow-probability
 spacy
 scispacy
+rasa>=3.0.0
 
 
 ## extras packages
-apache-beam
 tensorflow-hub
 tensorflow-text
 tensorflow-addons
 loguru
-datashader
-holoviews
+
+
+# nice to have
+# datashader
+# holoviews
+# apache-beam
+
 
 # reinforcement learning packages
-gym
-tf-agents
-tensorforce
-stable-baselines
+# gym
+# tf-agents
+# tensorforce
+# stable-baselines
 
 ## miscs
 
