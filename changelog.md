@@ -1,3 +1,7 @@
+# 21.11.30
+
+- switch to tensorflow `2.6.1-gpu` from `2.6.1-gpu-jupyter`
+
 # 21.11.28
 
 - downgrade to tensorflow `2.6.1-gpu-jupyter` so that we can support `rasa` which needs the version

@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.6.1-gpu-jupyter
+FROM tensorflow/tensorflow:2.6.1-gpu
 LABEL DavidDexter "dmwangi@kineticengines.co.ke"
 ENV DEBIAN_FRONTEND noninteractive
 
