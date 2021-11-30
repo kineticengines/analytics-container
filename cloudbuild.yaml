@@ -1,9 +1,11 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.11.28', '.' ]
+  args: [ 'build', '-t', 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.11.30', '.' ]
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.11.28']
+  args: ['push', 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.11.30']
 
 images:
-- 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.11.28'
+- 'gcr.io/kinetic-engines-247005/kinetic-engines-analytics:21.11.30'
+
+timeout: 1800s
