@@ -1,3 +1,8 @@
+# 23.05.20
+
+- switch to tensorflow `2.12.0-gpu` from `2.6.1-gpu`
+- comment `rasa` as a core dependency
+
 # 21.11.30
 
 - switch to tensorflow `2.6.1-gpu` from `2.6.1-gpu-jupyter`
