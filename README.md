@@ -23,6 +23,18 @@ docker pull gcr.io/kinetic-engines-247005/kinetic-engines-analytics:<tag>
 docker run --gpus all -it --rm -v $PWD:/app --network=host -u $(id -u):$(id -g) gcr.io/kinetic-engines-247005/kinetic-engines-analytics:<tag>
 ```
 
+## Docker GPU support
+
+- https://www.tensorflow.org/install/docker
+- https://github.com/NVIDIA/nvidia-container-toolkit
+- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+
+## Install CUDA
+
+- https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+- https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
+
 ## License
 
 [Apache License 2.0](LICENSE)

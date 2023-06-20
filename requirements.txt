@@ -18,10 +18,16 @@ tokenizers
 requests>=2.21.0
 nlpaug>=1.0.1
 nlp
-tensorflow-probability
 spacy
 scispacy
-rasa>=3.0.0
+pylance
+pyarrow
+langchain[llms]
+scikit-learn
+xgboost
+matplotlib
+# gymnasium
+
 
 
 ## extras packages
@@ -29,12 +35,17 @@ tensorflow-hub
 tensorflow-text
 tensorflow-addons
 loguru
+tensorboard>=2.10.0
+tensorboard-plugin-profile>=2.8.0
+tensorflow-datasets>=4.6.0
+tensorflow-hub>=0.12.0
 
 
 # nice to have
 # datashader
 # holoviews
 # apache-beam
+# rasa>=3.0.0
 
 
 # reinforcement learning packages
@@ -49,4 +60,3 @@ loguru
 # larq
 # pyspark
 # graphframes
-
