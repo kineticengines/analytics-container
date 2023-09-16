@@ -1,5 +1,5 @@
-FROM tensorflow/tensorflow:2.12.0-gpu
-LABEL DavidDexter "dmwangi@kineticengines.co.ke"
+FROM tensorflow/tensorflow:2.13.0-gpu
+LABEL DavidDexter "dmwangi@kineicengines.co.ke"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y apt  sudo
@@ -12,9 +12,9 @@ RUN groupadd --gid 1000 kineticengines \
 USER kineticengines
 
 # default working directory
-WORKDIR /app
+WORKDIR /home/kineticengines/app
 
-COPY requirements.txt /app
+COPY requirements.txt .
 
 # install system util packages
 RUN sudo apt-get update -q -y && sudo apt-get -q -y install vim software-properties-common apt-utils ca-certificates tzdata --fix-missing && \
@@ -29,6 +29,5 @@ ENV PATH=$PATH:$PYTHONPATH
 ENV PATH=$PATH:/home/kineticengines/.local/bin
 
 # install deps
-RUN python -m pip install --upgrade pip six setuptools cffi wheel cython tk --user --timeout 3600 && \
-    python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --timeout 3600 && \
+RUN python -m pip install --upgrade pip six setuptools cffi wheel cython tk --user --timeout 3600 && \    
     python -m pip install --upgrade -r requirements.txt  --user --timeout 3600

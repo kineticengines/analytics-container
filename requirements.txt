@@ -1,17 +1,17 @@
 ##core packages
 cython
+dask[complete]
 numpy>=1.19.2
 ipython
 jupyter
 pandas
 scikit-learn
 scikit-image
-seaborn
+seaborn[stats]
 matplotlib
 pydot
 opencv-python
 opencv-contrib-python
-librosa
 tqdm
 transformers>=v3.4.0
 tokenizers
@@ -19,43 +19,41 @@ requests>=2.21.0
 nlpaug>=1.0.1
 nlp
 spacy
-scispacy
-pylance
 pyarrow
-langchain[llms]
+
 scikit-learn
-xgboost
 matplotlib
-# gymnasium
-
-
-
-## extras packages
-tensorflow-hub
-tensorflow-text
-tensorflow-addons
-loguru
 tensorboard>=2.10.0
 tensorboard-plugin-profile>=2.8.0
-tensorflow-datasets>=4.6.0
-tensorflow-hub>=0.12.0
+loguru
 
 
-# nice to have
+## tf extras packages
+# tensorflow-hub
+# tensorflow-text
+# tensorflow-addons
+# tensorflow-datasets>=4.6.0
+# tensorflow-hub>=0.12.0
+
+## nice to have
 # datashader
 # holoviews
 # apache-beam
 # rasa>=3.0.0
+# librosa
+# scispacy
+# pylance
+# xgboost
+# langchain[llms]
 
 
-# reinforcement learning packages
+## reinforcement learning packages
 # gym
 # tf-agents
 # tensorforce
 # stable-baselines
 
 ## miscs
-
 # neural-structured-learning
 # larq
 # pyspark

@@ -1,8 +1,8 @@
 build:
-	docker build -t gcr.io/kinetic-engines-247005/kinetic-engines-analytics:02.06.23 .
+	docker build -t europe-west1-docker.pkg.dev/kinetic-engines-247005/kng/kinetic-engines-analytics:23.09.16 .
 
 run:
-	docker run --gpus all -it --rm -v $PWD:/app --network=host -u $(id -u):$(id -g) gcr.io/kinetic-engines-247005/kinetic-engines-analytics:02.06.23
+	docker run --gpus all -it -v $PWD:/home/kineticengines/app -w /home/kineticengines/app --restart=always --network=host -u $(id -u):$(id -g) europe-west1-docker.pkg.dev/kinetic-engines-247005/kng/kinetic-engines-analytics:23.09.16
 
 push:
 	gcloud builds submit --timeout=1h

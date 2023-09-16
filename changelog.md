@@ -1,3 +1,12 @@
+# 23.09.16
+
+- upgrade base to `tensorflow/tensorflow:2.13.0-gpu`
+- retire torch packages
+- introduce `dask[complete]` and `seaborn[stats]`
+- retire `extra tf packages`
+- retire langchain
+
+
 # 23.05.20
 
 - switch to tensorflow `2.12.0-gpu` from `2.6.1-gpu`
