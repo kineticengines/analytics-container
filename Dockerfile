@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.13.0-gpu
+FROM tensorflow/tensorflow:2.14.0-gpu
 LABEL DavidDexter "dmwangi@kineicengines.co.ke"
 ENV DEBIAN_FRONTEND noninteractive
 

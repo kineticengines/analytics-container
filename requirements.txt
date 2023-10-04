@@ -20,12 +20,14 @@ nlpaug>=1.0.1
 nlp
 spacy
 pyarrow
+polars[all]
 
 scikit-learn
 matplotlib
 tensorboard>=2.10.0
 tensorboard-plugin-profile>=2.8.0
 loguru
+
 
 
 ## tf extras packages

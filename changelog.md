@@ -1,3 +1,8 @@
+# 23.10.04
+
+- upgrade base to `tensorflow/tensorflow:2.14.0-gpu`
+- introduce `polars[all]`
+
 # 23.09.16
 
 - upgrade base to `tensorflow/tensorflow:2.13.0-gpu`
